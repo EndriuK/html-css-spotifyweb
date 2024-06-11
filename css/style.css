@@ -84,13 +84,14 @@ header {
     text-transform: uppercase;
 }
 
+.d-flex {
+    display: flex;
+}
 
 .left-col,
 .right-col {
     width: 200px;
-    height: 100%;
-    background-color: orange;
-    border: 1px solid black;
+    /* height: 100%; */
 }
 
 .center-col {
@@ -132,6 +133,65 @@ header {
     margin: 15px 13px;
     color: #fff;
 }
+
+.buttons-list-right {
+    list-style-type: none;
+    display: flex;
+}
+
+.buttons-list-right li {
+    margin: 33px 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+#sinister {
+    height: 50%;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    bottom: 30px;
+}
+
+.text-bg-grey {
+    color: #818181;
+}
+
+#span-sinister {
+    color: #818181;
+    font-size: 10px;
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+.text-sinister {
+    font-size: 10px;
+    color: #fff;
+    position: relative;
+    top: 30px;
+    left: 15px;
+}
+
+.icon-min-album {
+    position: relative;
+    top: 30px;
+    left: 15px;
+    left: 25px;
+    padding: 3px;
+    font-size: 16px;
+    color: #818181;
+}
+
+.icon-right {
+    position: relative;
+    top: 30px;
+    left: 15px;
+    left: 25px;
+    padding: 3px;
+    font-size: 16px;
+}
+
 
 @media screen and (min-width: 786px) {
     .sidebar {
