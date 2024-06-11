@@ -67,7 +67,21 @@ header {
     background-color: #141922;
 }
 
+#logo {
+    width: 50%;
+}
 
+.sidebar-logos {
+    margin-top: 35px;
+}
+
+.logos {
+    width: 10%;
+}
+
+#home {
+    color: #fff;
+}
 
 
 #btn-upgrade {
