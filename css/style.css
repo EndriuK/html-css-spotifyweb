@@ -4,16 +4,58 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    position: fixed;
+    left: 70px;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.232);
+    width: calc(100vw - 70px);
+    text-align: right;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    margin: 10px;
+    background-color: green;
+    /* height: 100px; */
+    border: 1px solid black;
+}
+
+
+
+
 .top-section {
     height: calc(100vh - 100px);
-    background-color: red;
+    width: 100vw;
+    background-color: rgb(81, 255, 0);
     display: flex;
 }
 
 .bottom-section {
+    width: 100vw;
     height: 100px;
-    background-color: blue;
+    background-color: #282828;
+    display: flex;
 }
+
+
 
 .sidebar {
     width: 70px;
@@ -22,18 +64,10 @@
 
 .main-content {
     width: calc(100vw - 70px);
-    background-color: brown;
+    background-color: #141922;
 }
 
-header {
-    position: fixed;
-    left: 75px;
-    top: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.232);
-    width: calc(100vw - 70px);
-    text-align: right;
-}
+
 
 
 #btn-upgrade {
@@ -51,6 +85,53 @@ header {
 }
 
 
+.left-col,
+.right-col {
+    width: 200px;
+    height: 100%;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.center-col {
+    width: calc(100% - 400px);
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.playbar-controls {
+    display: flex;
+    width: 100%;
+}
+
+.playbar-controls .current,
+.playbar-controls .end {
+    width: 10%;
+    text-align: center;
+    color: #fff;
+}
+
+.playbar-controls .playbar {
+    width: 80%;
+    background-color: goldenrod;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.buttons-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-list li {
+    margin: 15px 13px;
+    color: #fff;
+}
 
 @media screen and (min-width: 786px) {
     .sidebar {
@@ -64,5 +145,14 @@ header {
     header {
         left: 250px;
         width: calc(100vw - 250px);
+    }
+
+    .left-col,
+    .right-col {
+        width: 15%;
+    }
+
+    .center-col {
+        width: 70%;
     }
 }
