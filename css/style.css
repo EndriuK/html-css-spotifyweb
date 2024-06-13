@@ -21,6 +21,8 @@ header {
     text-align: right;
 }
 
+
+
 h4 {
     color: #fff;
 }
@@ -35,15 +37,23 @@ h4 {
     flex-wrap: wrap;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .content {
     margin: 10px;
-    background-color: green;
-    height: 40px;
+
+}
+
+
+.row-cover {
+    display: flex;
 }
 
 
 .album-cover {
-    height: 100%;
+    width: 100%;
 }
 
 
@@ -62,11 +72,73 @@ h4 {
     display: flex;
 }
 
+h4 {
+    color: #fff;
+}
 
+span {
+    color: #818181;
+}
 
 .sidebar {
     width: 70px;
     background-color: black;
+}
+
+.top-sidebar {
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.nav-logo {
+    height: 80px;
+    border: 1px solid black;
+}
+
+.nav-menu {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.nav-playlist {
+    overflow-y: hidden;
+}
+
+.color-fff {
+    color: #fff;
+}
+
+.playlist-list {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 15px;
+    height: 82%;
+    overflow-y: auto;
+}
+
+
+
+.playlist-list li {
+    margin: 10px 0px;
+
+}
+
+.bottom-siderbar {
+    height: 80px;
+}
+
+#download {
+    height: 20px;
+}
+
+#profile {
+    height: 20px;
+    background-color: #818181;
+    border-radius: 50%;
+    margin: 5px 5px;
 }
 
 .main-content {
@@ -120,6 +192,10 @@ h4 {
     width: calc(100% / 3);
 }
 
+.col-50 {
+    width: 50%;
+}
+
 .col-100 {
     width: 100%;
 
@@ -154,13 +230,39 @@ h4 {
 }
 
 .playbar-controls .playbar {
-    width: 80%;
-    background-color: goldenrod;
+    width: 20%;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 10px;
+    margin-top: 5px;
+    position: relative;
+    top: 0px;
+    left: 58px;
+}
+
+.playbar-bg-grey {
+    width: 50%;
+    background-color: gray;
     border: 1px solid black;
     border-radius: 10px;
     height: 10px;
     margin-top: 5px;
 }
+
+
+.row-cover-img {
+    display: flex;
+
+}
+
+.cover-img {
+    width: 15%;
+}
+
+
+
+
 
 .main-list {
     list-style-type: none;

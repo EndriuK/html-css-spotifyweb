@@ -14,7 +14,7 @@
 <body>
     <div class="top-section">
         <div class="sidebar">
-            <div id="logo">
+            <!--  <div id="logo">
                 <img src="./img/logo.svg" alt="">
             </div>
             <div class="sidebar-logos">
@@ -31,9 +31,65 @@
             </div>
             <div id="playlist">
                 <p><strong>PLAYLIST</strong></p>
+
             </div>
             <div>
+                <i class="fa-solid fa-plus"></i> la tua playlist
+            </div> -->
 
+            <div class="top-sidebar">
+                <div class="nav-logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <div class="nav-menu">
+                    <div class="sidebar-logos">
+                        <img class="logos" src="./img/home.svg" alt="">
+                        <span id="home"><strong>Home</strong></span>
+                    </div>
+                    <div class="sidebar-logos">
+                        <img class="logos" src="./img/search.svg" alt="">
+                        <span class="text-bg-grey"><strong>Cerca</strong></span>
+                    </div>
+                    <div class="sidebar-logos">
+                        <img class="logos" src="./img/libreria.svg" alt="">
+                        <span class="text-bg-grey"><strong>La tua libreria</strong></span>
+                    </div>
+
+                </div>
+                <div class="nav-playlist">
+                    <h2 class="color-fff">Playlist</h2>
+                    <i class="fa-solid fa-plus text-bg-grey"></i>
+                    <span class="text-bg-grey">Crea playlist</span>
+                    <ul class="playlist-list text-bg-grey">
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-siderbar">
+                <div>
+                    <img id="download" src="./img/download.svg" alt="">
+                    <span class="text-bg-grey">Installa app</span>
+                </div>
+                <hr>
+                <img id="profile" src="./img/profile.svg" alt="">
+                <span class="color-fff"><strong>John Doe</strong></span>
             </div>
 
         </div>
@@ -45,7 +101,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-100">
-                        <div class="content">
+                        <div class="content text-center">
                             <ul class="main-list">
                                 <li>in evidenza</li>
                                 <li>podcast</li>
@@ -68,35 +124,65 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
+                <div class="row-cover">
                     <div class="col-33">
                         <div class="content">
                             <img class="album-cover" src="./img/metal_lifting.jpg" alt="">
+                            <h4>Havy metal</h4>
+                            <br>
+                            <span>Subtitle</span>
                         </div>
                     </div>
                     <div class="col-33">
                         <div class="content">
                             <img class="album-cover" src="./img/stranger.jpeg" alt="">
+                            <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)
+                            </h4>
+                            <br>
+                            <span>Kyle Dixon & Michael Stein</span>
                         </div>
                     </div>
                     <div class="col-33">
                         <div class="content">
                             <img class="album-cover" src="./img/aquietplace.jpeg" alt="">
+                            <h4>A Quiet Place</h4>
+                            <br>
+                            <span>subtitle</span>
                         </div>
                     </div>
                     <div class="col-33">
                         <div class="content">
                             <img class="album-cover" src="./img/split.jpeg" alt="">
+                            <h4>Split</h4>
+                            <br>
+                            <span>Subtitle</span>
                         </div>
                     </div>
                     <div class="col-33">
                         <div class="content">
                             <img class="album-cover" src="./img/cure.jpeg" alt="">
+                            <h4>A Cure For Wellness</h4>
+                            <br>
+                            <span>Subtitile</span>
                         </div>
                     </div>
                     <div class="col-33">
                         <div class="content">
                             <img class="album-cover" src="./img/sinister.jpeg" alt="">
+                            <h4>Sinister</h4>
+                            <br>
+                            <span>Subtitle</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-100">
+                        <div class="content">
+                            <h3 class="color-fff">Creato per John Done</h3>
+                            <br>
+                            <span>Più ascolti, più accurati saranno i suggerimenti.</span>
                         </div>
                     </div>
                 </div>
@@ -104,58 +190,65 @@
         </div>
 
     </div>
-    <div class="bottom-section">
-        <div class="left-col d-flex">
-            <img id="sinister" src="./img/sinister.jpeg" alt="">
-            <div>
-                <p class="text-sinister"><strong>SINISTER</strong></p>
-                <span id="span-sinister">Brano Nome</span>
 
-                <i class="fa-regular fa-heart icon-min-album"></i>
-                <i class="fa-solid fa-folder icon-min-album"></i>
+    <div class="footer-section">
+        <footer>
+            <div class="bottom-section">
+                <div class="left-col d-flex">
+                    <img id="sinister" src="./img/sinister.jpeg" alt="">
+                    <div>
+                        <p class="text-sinister"><strong>SINISTER</strong></p>
+                        <span id="span-sinister">Brano Nome</span>
+
+                        <i class="fa-regular fa-heart icon-min-album"></i>
+                        <i class="fa-solid fa-folder icon-min-album"></i>
+                    </div>
+                </div>
+                <div class="center-col">
+                    <div class="buttons">
+                        <ul class="buttons-list">
+                            <li>
+                                <i class="fa-solid fa-shuffle"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-backward-step"></i>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-circle-play fa-xl"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-forward-step"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="playbar-controls">
+                        <div class="current">00:10</div>
+                        <div class="playbar"></div>
+                        <div class="playbar-bg-grey"></div>
+                        <div class="end">4:30</div>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <ul class="buttons-list-right">
+                        <li>
+                            <i class="fa-solid fa-list"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-display"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-volume-high"></i>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="center-col">
-            <div class="buttons">
-                <ul class="buttons-list">
-                    <li>
-                        <i class="fa-solid fa-shuffle"></i>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-backward-step"></i>
-                    </li>
-                    <li>
-                        <i class="fa-regular fa-circle-play fa-xl"></i>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-forward-step"></i>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-rotate-right"></i>
-                    </li>
-                </ul>
-            </div>
-            <div class="playbar-controls">
-                <div class="current">00:10</div>
-                <div class="playbar"></div>
-                <div class="end">4:30</div>
-            </div>
-        </div>
-        <div class="right-col">
-            <ul class="buttons-list-right">
-                <li>
-                    <i class="fa-solid fa-list"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-display"></i>
-                </li>
-                <li>
-                    <i class="fa-solid fa-volume-high"></i>
-                </li>
-            </ul>
-            aggiungere slider
-        </div>
+        </footer>
+
     </div>
+
 </body>
 
 </html>
